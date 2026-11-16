@@ -1,0 +1,16 @@
+# CyberOps VM terminal
+sudo lab.support.files/scripts/cyberops_topo.py
+
+# Mininet prompt
+xterm H1
+xterm H4
+
+# H4 terminal
+/home/analyst/lab.support.files/scripts/reg_server_start.sh
+
+# H1 terminal (switch from root to analyst first)
+su analyst
+firefox &
+
+# H1 terminal: start capture, then browse to 172.16.0.40 in Firefox
+sudo tcpdump -i H1-eth0 -v -c 50 -w /home/analyst/capture.pcap

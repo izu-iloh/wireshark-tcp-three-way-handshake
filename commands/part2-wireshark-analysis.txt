@@ -1,0 +1,13 @@
+# H1 terminal
+wireshark &
+
+# In Wireshark:
+# File > Open > /home/analyst/capture.pcap
+# Apply display filter:
+tcp
+
+# Inspect the first three handshake packets:
+# 1. client SYN
+# 2. server SYN/ACK
+# 3. client ACK
+# Expand Transmission Control Protocol and Flags in packet details.

@@ -1,0 +1,11 @@
+# Read tcpdump manual; search for -r with /-r, n for next, q to quit
+man tcpdump
+
+# Read first three TCP packets from saved capture
+tcpdump -r /home/analyst/capture.pcap tcp -c 3
+
+# Mininet prompt
+quit
+
+# CyberOps VM terminal, after quitting Mininet
+sudo mn -c

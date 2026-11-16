@@ -1,0 +1,20 @@
+# Packet captures and potentially sensitive traffic
+*.pcap
+*.pcapng
+evidence/captures/*
+!evidence/captures/README.md
+!evidence/captures/.gitkeep
+
+# Local exports and temporary files
+*.log
+*.tmp
+*.swp
+*.bak
+.DS_Store
+Thumbs.db
+
+# Python/editor/OS artifacts
+__pycache__/
+*.py[cod]
+.vscode/
+.idea/
